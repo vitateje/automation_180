@@ -1,7 +1,7 @@
 # automation_180:
 
-# To Install:
+*#* To Install:
 
-# To Run:
+* To Run:
 ruby filename.rb
 
