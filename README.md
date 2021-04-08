@@ -3,5 +3,7 @@
 *#* To Install:
 
 * To Run:
-ruby filename.rb
+* * ruby filename.rb
+
+#
 
