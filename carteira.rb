@@ -1,10 +1,13 @@
 nome = "Vitor"
 idade = 6
 
+# interpolation
+
 if (idade >= 18)
-    puts nome + " Get your Car Brow"
+    puts "Get your Car Brow #{nome}"
 elsif (idade < 7)
-    puts nome + " Vai de Motoquinha"
+    puts "Vai de Motoquinha #{nome}"
 else
     puts "Nothing to Declare"
 end
+
