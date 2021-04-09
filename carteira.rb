@@ -6,7 +6,7 @@ idade = 6
 if (idade >= 18)
     puts "Get your Car Brow #{nome}"
 elsif (idade < 7)
-    puts "Vai de Motoquinha #{nome}"
+    puts "Vai de Motoquinha #{nome} que tem #{idade} anos."
 else
     puts "Nothing to Declare"
 end
