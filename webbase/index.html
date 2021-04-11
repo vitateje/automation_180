@@ -35,13 +35,17 @@
                 <thead>
                     <th>Nome</th>
                     <th>Email</th>
-                    <th>nota</th>
+                    <th>Nota</th>
+                    <th>Ações</th>
                 </thead>
                 <tbody>
                     <tr v-for="aluno in alunos">
                         <td>{{aluno.nome}}</td>
                         <td>{{aluno.email}}</td>
                         <td>{{aluno.nota}}</td>
+                        <td>
+                            <button class="danger" @click="apagarAluno(aluno)">Apagar</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -69,6 +73,11 @@
                     this.alunos.push(this.form)
                     this.limpaFormulario()
                 },
+                apagarAluno: function(aluno) {
+                    var posicao = this.alunos.indexOf(aluno)
+                    console.log(posicao)
+                    this.alunos.splice(posicao, 1)
+                },
                 limpaFormulario: function() {
                     this.form = { nome:"",
                     email: "",
@@ -87,6 +96,15 @@
 
         .table th, .table td {
             border-top: 1px solid #ccc;
+        }
+
+        .danger {
+            background-color: #880E4F;
+            color: #eee;
+        }
+
+        .table th :last-child, .table td :last-child {
+            text-align: right;
         }
 
         input {
