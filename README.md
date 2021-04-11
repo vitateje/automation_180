@@ -1,6 +1,16 @@
 # automation_180:
 
-*#* To Install:
+* To Install:
+
+    todo: install command
+
+    gem install bundler ( instala o gerenciador de pacotes )
+
+    bundle init ( inicia projeto ruby )
+
+    bundle install ( instala bibliotecas adicionadas e dependências )
+
+    cucumber --init ( inicia estrutura cucumber )
 
 * To Run:
     * ruby filename.rb
