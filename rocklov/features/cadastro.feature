@@ -6,6 +6,7 @@ Funcionalidade: Cadastro
     Quero fazer o meu cadastro no Rocklov
     Para que eu possa disponibilizá-los para locação
 
+    @temp
     Cenario: Submeter cadastro
 
         Dado que acesso a página de cadastro
