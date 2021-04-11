@@ -1,0 +1,12 @@
+Sendo um músico que possui equipamentos musicais
+Quero fazer o meu cadastro no Rocklov
+Para que eu possa disponibilizá-los para locação
+
+# o ator (que utiliará a plataforma)
+# a ação (funcionalidade que deve ser desenvolvida)
+# resultado (valor de negocio agregado)
+
+Cenario: Submeter cadastro
+
+    Dado que acesso a página de cadastro
+    
