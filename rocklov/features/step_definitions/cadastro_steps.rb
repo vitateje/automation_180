@@ -1,7 +1,7 @@
-
+#language: pt
 
 Dado(/^que acesso a página de cadastro$/) do
-    pending # Write code here that turns the phrase above into concrete actions
+    visit "http://127.0.0.1:3000/signup"
 end
   
 Quando(/^submeto o meu cadastro completo$/) do
