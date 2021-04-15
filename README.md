@@ -2,6 +2,10 @@
 
 * To Install:
 
+    Install RBENV
+
+    Put chromedriver in path/src/bin
+
     todo: install command
 
     gem install bundler ( instala o gerenciador de pacotes )
@@ -24,7 +28,11 @@ clone https://gitlab.com/papito/rocklov-dc
 
 docker ps
 
+Up Env
 docker-compose up -d
+
+Destruct Env
+docker-compose down
 
 * to add: sudo nano /etc/hosts
 
