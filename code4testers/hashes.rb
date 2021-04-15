@@ -1,8 +1,8 @@
 # hashes
 
-vitor = { nome: "Vitor", email: "vitateje@outlook.com", legal: true }
+vitor = { nome: "Vitor", email: "vitox@outlook.com", legal: true }
 
-victoria = { nome: "Victória", email: "victoriaghenrique@outlook.com", legal: false }
+victoria = { nome: "Victória", email: "vice@outlook.com", legal: false }
 
 virtrudes = { nome: "Virtrudes", email: "virtrudes@outlook.com", legal: true}
 
