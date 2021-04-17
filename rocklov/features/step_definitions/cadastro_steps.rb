@@ -23,48 +23,9 @@ Quando('submeto o seguinte formulário de cadastro:') do |table|
     click_button "Cadastrar"  
 end
   
+
 Então(/^sou redirecionado para o Dashboard$/) do
     expect(page).to have_css ".dashboard"
-end
-
-Quando('submeto o meu cadastro sem o nome') do
-    find("#fullName").set ""
-    find("#email").set Faker::Internet.free_email
-    find("#password").set "lasanha"
-
-    sleep 2
-
-    click_button "Cadastrar"
-end
-
-
-Quando('submeto o meu cadastro sem o email') do
-    find("#fullName").set "Virtrudes"
-    find("#password").set "lasanha"
-
-    sleep 2
-
-    click_button "Cadastrar"
-end
-
-
-Quando('submeto o meu cadastro com o email incorreto') do
-    find("#fullName").set "Virtrudes"
-    find("#email").set "teste@"
-    find("#password").set "lasanha"
-
-    sleep 2
-
-    click_button "Cadastrar"
-end
-
-Quando('submeto o meu cadastro sem a senha') do
-    find("#fullName").set "Virtrudes"
-    find("#email").set Faker::Internet.free_email
-
-    sleep 2
-
-    click_button "Cadastrar"
 end
 
 
