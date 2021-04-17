@@ -6,8 +6,11 @@ Dado(/^que acesso a página de cadastro$/) do
 end
   
 Quando(/^submeto o meu cadastro completo$/) do
+
+    MongoDB.new.remove_user("virtrudes@cat.com")
+
     find("#fullName").set "Virtrudes Henrique Teixeira"
-    find("#email").set Faker::Internet.free_email
+    find("#email").set "virtrudes@cat.com"
     find("#password").set "lasanha"
 
     sleep 2
