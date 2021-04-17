@@ -31,12 +31,7 @@ Quando('submeto o meu cadastro sem o nome') do
 
     click_button "Cadastrar"
 end
-  
-Então('vejo a mensagem de alerta: Oops. Informe seu nome completo!') do
-    alert = find(".alert-dark")
-    expect(alert.text).to eql 'Oops. Informe seu nome completo!'
-    # expect(page).to have_css "Informe seu nome completo!"
-end
+
 
 Quando('submeto o meu cadastro sem o email') do
     find("#fullName").set "Virtrudes"
@@ -46,11 +41,7 @@ Quando('submeto o meu cadastro sem o email') do
 
     click_button "Cadastrar"
 end
-  
-Então('vejo a mensagem de alerta: Oops. Informe um email válido!') do
-    alert = find(".alert-dark")
-    expect(alert.text).to eql 'Oops. Informe um email válido!'
-end
+
 
 Quando('submeto o meu cadastro com o email incorreto') do
     find("#fullName").set "Virtrudes"
@@ -70,8 +61,9 @@ Quando('submeto o meu cadastro sem a senha') do
 
     click_button "Cadastrar"
 end
-  
-Então('vejo a mensagem de alerta: Oops. Informe sua senha secreta!') do
+
+
+Então('vejo a mensagem de alerta: {string}') do |expect_alert|
     alert = find(".alert-dark")
-    expect(alert.text).to eql 'Oops. Informe sua senha secreta!'
+    expect(alert.text).to eql expect_alert
 end
