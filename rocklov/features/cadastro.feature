@@ -10,7 +10,9 @@ Funcionalidade: Cadastro
     Cenario: Submeter cadastro
 
         Dado que acesso a página de cadastro
-        Quando submeto o meu cadastro completo
+        Quando submeto o seguinte formulário de cadastro:
+            |nome                       |email            |senha  |
+            |Virtrudes Henrique Teixeira|virtrudes@cat.com|lasanha|
         Então sou redirecionado para o Dashboard
 
     @temp

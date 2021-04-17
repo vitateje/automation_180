@@ -4,18 +4,23 @@ Dado(/^que acesso a página de cadastro$/) do
     visit "http://127.0.0.1:3000/signup"
     sleep 0.5
 end
-  
-Quando(/^submeto o meu cadastro completo$/) do
 
-    MongoDB.new.remove_user("virtrudes@cat.com")
 
-    find("#fullName").set "Virtrudes Henrique Teixeira"
-    find("#email").set "virtrudes@cat.com"
-    find("#password").set "lasanha"
+Quando('submeto o seguinte formulário de cadastro:') do |table|
 
-    sleep 2
+    log table.hashes
 
-    click_button "Cadastrar"
+    user = table.hashes.first
+
+    log user
+
+    MongoDB.new.remove_user(user[:email])
+
+    find("#fullName").set user[:nome]
+    find("#email").set user[:email]
+    find("#password").set user[:senha]
+
+    click_button "Cadastrar"  
 end
   
 Então(/^sou redirecionado para o Dashboard$/) do
