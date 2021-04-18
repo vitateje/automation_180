@@ -15,38 +15,18 @@ Funcionalidade: Cadastro
             |Virtrudes Henrique Teixeira|virtrudes@cat.com|lasanha|
         Então sou redirecionado para o Dashboard
 
-    @temp
-    Cenario: Submeter cadastro sem o nome
+
+    Esquema do Cenario: Tentativa de Cadastro
 
         Dado que acesso a página de cadastro
         Quando submeto o seguinte formulário de cadastro:
-            |nome|email            |senha  |
-            |    |virtrudes@cat.com|lasanha|
-        Então vejo a mensagem de alerta: "Oops. Informe seu nome completo!"
+            |nome        |email        |senha        |
+            |<nome_input>|<email_input>|<senha_input>|
+        Então vejo a mensagem de alerta: "<mensagem_output>"
 
-    @temp
-    Cenario: Submeter cadastro sem o email
-
-        Dado que acesso a página de cadastro
-        Quando submeto o seguinte formulário de cadastro:
-            |nome                       |email|senha  |
-            |Virtrudes Henrique Teixeira|     |lasanha|
-        Então vejo a mensagem de alerta: "Oops. Informe um email válido!"
-
-    @temp
-    Cenario: Submeter cadastro com email incorreto
-
-        Dado que acesso a página de cadastro
-        Quando submeto o seguinte formulário de cadastro:
-            |nome                       |email        |senha  |
-            |Virtrudes Henrique Teixeira|virtrudes@cat|lasanha|
-        Então vejo a mensagem de alerta: "Oops. Informe um email válido!"
-
-    @temp
-    Cenario: Submeter cadastro sem a senha
-
-        Dado que acesso a página de cadastro
-        Quando submeto o seguinte formulário de cadastro:
-            |nome                       |email            |senha  |
-            |Virtrudes Henrique Teixeira|virtrudes@cat.com|       |
-        Então vejo a mensagem de alerta: "Oops. Informe sua senha secreta!"
+    Exemplos:
+    |nome_input|email_input|senha_input|mensagem_output|
+    |                           |virtrudes@cat.com|lasanha|Oops. Informe seu nome completo!|
+    |Virtrudes Henrique Teixeira|                 |lasanha|Oops. Informe um email válido!  |
+    |Virtrudes Henrique Teixeira|virtrudes@cat    |lasanha|Oops. Informe um email válido!  |
+    |Virtrudes Henrique Teixeira|virtrudes@cat.com|       |Oops. Informe sua senha secreta!|
