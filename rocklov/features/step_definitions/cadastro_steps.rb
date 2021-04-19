@@ -1,7 +1,7 @@
 #language: pt
 
 Dado(/^que acesso a página de cadastro$/) do
-    visit "http://127.0.0.1:3000/signup"
+    visit "/signup"
     sleep 0.5
 end
 

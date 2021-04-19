@@ -1,6 +1,6 @@
 
 Dado('que acesso a página principal') do
-    visit "http://127.0.0.1:3000"
+    visit "/"
 end
   
 Quando('submeto minhas credencias com {string} e {string}') do |email, password|
