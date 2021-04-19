@@ -8,11 +8,11 @@ end
 
 Quando('submeto o seguinte formulário de cadastro:') do |table|
 
-    log table.hashes
+    # log table.hashes
 
     user = table.hashes.first
 
-    log user
+    # log user
 
     MongoDB.new.remove_user(user[:email])
 
@@ -21,15 +21,4 @@ Quando('submeto o seguinte formulário de cadastro:') do |table|
     find("#password").set user[:senha]
 
     click_button "Cadastrar"  
-end
-  
-
-Então(/^sou redirecionado para o Dashboard$/) do
-    expect(page).to have_css ".dashboard"
-end
-
-
-Então('vejo a mensagem de alerta: {string}') do |expect_alert|
-    alert = find(".alert-dark")
-    expect(alert.text).to eql expect_alert
 end
