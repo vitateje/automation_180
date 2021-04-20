@@ -1,12 +1,13 @@
 #language: pt
 
+@cad
 Funcionalidade: Cadastro
 
     Sendo um músico que possui equipamentos musicais
     Quero fazer o meu cadastro no Rocklov
     Para que eu possa disponibilizá-los para locação
 
-    @cad
+    
     Cenario: Submeter cadastro
 
         Dado que acesso a página de cadastro

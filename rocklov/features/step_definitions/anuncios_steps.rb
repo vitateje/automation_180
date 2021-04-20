@@ -1,4 +1,7 @@
 Dado('que eu estou logado como {string} e {string}') do |email, password|
+    # @ variavel global
+    @email = email
+
     visit "/"
     find("input[placeholder='Seu e-email']").set email
     find("input[type=password]").set password
@@ -13,19 +16,19 @@ Dado('que acesso o formulario de cadastro de anúncios') do
 end
 
 Dado('que eu tenho o sequinte equipamento:') do |table|
+    
     @anuncio = table.rows_hash
-    log @anuncio
 
+    MongoDB.new.remove_equipo(@anuncio[:nome], @email)
+end
+
+Quando('submeto o cadastro desse item') do
+
+    thumb =  Dir.pwd + "/features/support/fixtures/images/" + @anuncio[:thumb]
     # input[placeholder="String"]
     # input[placeholder$=equipamento] pega seletor que tenha equipamento como ultima palavra
     # * contem
     # ^ pega a o que começa com equipamento
-    # @ variavel global
-end
- 
-Quando('submeto o cadastro desse item') do
-
-    thumb =  Dir.pwd + "/features/support/fixtures/images/" + @anuncio[:thumb]
     find("#thumbnail input[type=file]", visible:false).set thumb
     find("input[placeholder$=equipamento]").set @anuncio[:nome]
     find("#category").find("option", text: @anuncio[:categoria]).select_option

@@ -1,5 +1,6 @@
 #language: pt
 
+@cad_anuncios
 Funcionalidade: Cadastro de Anúncios
     Sendo usuário cadastrado no Rocklov que possui equipamentos musicais
     Quero cadastrar meus equipamentos
