@@ -2,7 +2,6 @@
 
 Dado(/^que acesso a página de cadastro$/) do
     visit "/signup"
-    sleep 0.5
 end
 
 
@@ -14,11 +13,13 @@ Quando('submeto o seguinte formulário de cadastro:') do |table|
 
     # log user
 
-    # MongoDB.new.remove_user(user[:email])
+    MongoDB.new.remove_user(user[:email])
 
     find("#fullName").set user[:nome]
     find("#email").set user[:email]
     find("#password").set user[:senha]
 
-    click_button "Cadastrar"  
+    click_button "Cadastrar"
+    
+    sleep 1
 end
