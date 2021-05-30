@@ -8,7 +8,7 @@ Funcionalidade: Cadastro de Anúncios
 
     Cenario: Novo equipo
 
-        Dado que eu estou logado como "virtrudes@cat.com" e "lasanha"
+        Dado que eu estou logado como "virtrudes@cats.com" e "lasanha1"
         E que acesso o formulario de cadastro de anúncios
         E que eu tenho o sequinte equipamento:
             | thumb     | fender-sb.jpg |
