@@ -21,5 +21,5 @@ Quando('submeto o seguinte formulário de cadastro:') do |table|
 
     click_button "Cadastrar"
     
-    sleep 1
+    # sleep 3
 end
