@@ -2,11 +2,11 @@ Dado('que eu estou logado como {string} e {string}') do |email, password|
     # @ variavel global
     @email = email
 
-    visit "/"
-    find("input[placeholder='Seu email']").set email
-    find("input[type=password]").set password
-
-    click_button "Entrar"
+    login_page = LoginPage.new
+    login_page.abrir
+    login_page.campo_email.set email
+    login_page.campo_senha.set password
+    login_page.botao_entrar
 end
   
 Dado('que acesso o formulario de cadastro de anúncios') do
