@@ -3,10 +3,8 @@ Dado('que eu estou logado como {string} e {string}') do |email, password|
     @email = email
 
     login_page = LoginPage.new
-    login_page.abrir
-    login_page.campo_email.set email
-    login_page.campo_senha.set password
-    login_page.botao_entrar
+    login_page.open
+    login_page.with(email, password)
 end
   
 Dado('que acesso o formulario de cadastro de anúncios') do
