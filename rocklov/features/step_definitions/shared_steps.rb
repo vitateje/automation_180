@@ -6,6 +6,5 @@ end
 
 
 Então('vejo a mensagem de alerta: {string}') do |expect_alert|
-    alert = find(".alert-dark")
-    expect(alert.text).to eql expect_alert
+    expect(@login_page.alert_dark).to eql expect_alert
 end

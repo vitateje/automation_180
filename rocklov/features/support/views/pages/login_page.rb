@@ -13,4 +13,8 @@ class LoginPage
         click_button "Entrar"
     end
 
+    def alert_dark
+        return find(".alert-dark").text
+    end
+
 end
