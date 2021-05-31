@@ -6,10 +6,12 @@ Funcionalidade: Cadastro de Anúncios
     Quero cadastrar meus equipamentos
     Para que eu possa disponibiliza-los para locação
 
+    Contexto: Login
+        * Login com "virtrudes@cats.com" e "lasanha1"
+
     Cenario: Novo equipo
 
-        Dado que eu estou logado como "virtrudes@cats.com" e "lasanha1"
-        E que acesso o formulario de cadastro de anúncios
+        Dado que acesso o formulario de cadastro de anúncios
         E que eu tenho o sequinte equipamento:
             | thumb     | fender-sb.jpg |
             | nome      | Fender Strato |
