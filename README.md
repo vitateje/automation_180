@@ -44,4 +44,8 @@ Hosts
 * to generate and save report in html:
     cucumber --format html --out reports.html
 
+* install java8 jdk
+* install allure-cucumber
+
+command: allure serve logs\
 #
