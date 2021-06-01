@@ -12,7 +12,7 @@ Funcionalidade: Cadastro de Anúncios
     Cenario: Novo equipo
 
         Dado que acesso o formulario de cadastro de anúncios
-        E que eu tenho o sequinte equipamento:
+            E que eu tenho o sequinte equipamento:
             | thumb     | fender-sb.jpg |
             | nome      | Fender Strato |
             | categoria | Cordas        |
@@ -20,3 +20,14 @@ Funcionalidade: Cadastro de Anúncios
         Quando submeto o cadastro desse item
         Então devo ver esse item no meu Dashboard
 
+    @temp
+    Cenario: Anúncio sem foto
+
+        Dado que acesso o formulario de cadastro de anúncios
+            E que eu tenho o sequinte equipamento:
+            | thumb     |               |
+            | nome      | Fender Strato |
+            | categoria | Cordas        |
+            | preco     | 200           |
+        Quando submeto o cadastro desse item
+        Então deve conter a mensagem de alerta: "Adicione uma foto no seu anúncio!"
