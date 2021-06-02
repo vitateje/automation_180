@@ -4,9 +4,11 @@ require "capybara/cucumber"
 require "faker"
 require "mongo"
 
+CONFIG = YAML.load_file(File.join(Dir.pwd, "features/support/config/#{ENV["CONFIG"]}"))
+
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
-  config.app_host = "http://127.0.0.1:3000"
+  config.app_host = CONFIG["url"]
   Capybara.default_max_wait_time = 10
 end
 
