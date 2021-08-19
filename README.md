@@ -41,5 +41,11 @@ Hosts
 127.0.0.1 rocklov-api
 127.0.0.1 rocklov-web
 
+* to generate and save report in html:
+    cucumber --format html --out reports.html
 
+* install java8 jdk
+* install allure-cucumber
+
+command: allure serve logs\
 #
