@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Home Page </title>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <h1> Cadastro de Alunos </h1>
+
+        <form>
+            <label for="nomeCompleto">Nome Completo</label>
+            <input type="text" name="nomeCompleto" v-model="form.nome">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" v-model="form.email">
+
+            <label for="nota">Nota</label>
+            <input type="text" name="nota" v-model="form.nota">
+
+            <input type="button" value="Cadastrar" @click="adicionarContato()">
+
+        </form>
+
+        <span>
+            {{form.nome}} - {{form.email}} - {{form.nota}}
+        </span>
+
+        <div>
+            <table class="table">
+                <thead>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Nota</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody>
+                    <tr v-for="aluno in alunos">
+                        <td>{{aluno.nome}}</td>
+                        <td>{{aluno.email}}</td>
+                        <td>{{aluno.nota}}</td>
+                        <td>
+                            <button class="danger" @click="apagarAluno(aluno)">Apagar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                form: {
+                    nome:"",
+                    email: "",
+                    nota: ""
+            },
+                alunos: [
+                    { nome: "Fernando Papito", email: "fernando@gmail.com", nota:10 },
+                    { nome: "Deborah", email: "deborah@gmail.com", nota: 8},
+                    { nome: "Teste", email: "teste@gmail.com", nota: 7}
+                ]
+            },
+            methods: {
+                adicionarContato: function() {
+                    console.log(this.form)
+                    this.alunos.push(this.form)
+                    this.limpaFormulario()
+                },
+                apagarAluno: function(aluno) {
+                    var posicao = this.alunos.indexOf(aluno)
+                    console.log(posicao)
+                    this.alunos.splice(posicao, 1)
+                },
+                limpaFormulario: function() {
+                    this.form = { nome:"",
+                    email: "",
+                    nota: ""
+                    }
+                },
+            }
+        })
+    </script>
+    <style>
+        .table {
+            margin-top: 20px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .table th, .table td {
+            border-top: 1px solid #ccc;
+        }
+
+        .danger {
+            background-color: #880E4F;
+            color: #eee;
+        }
+
+        .table th :last-child, .table td :last-child {
+            text-align: right;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type=button] {
+            background-color: #00BCD4;
+            border-color: #00BCD4;
+            margin-top: 10px;
+            color: #eee;
+        }
+    </style>
+</body>
+
+</html>
