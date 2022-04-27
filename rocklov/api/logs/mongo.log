@@ -27,3 +27,161 @@ D, [2021-06-15T23:12:51.167596 #69433] DEBUG -- : MONGODB | Server description f
 D, [2021-06-15T23:12:51.167705 #69433] DEBUG -- : MONGODB | There was a change in the members of the 'Single' topology.
 D, [2021-06-15T23:12:51.168017 #69433] DEBUG -- : MONGODB | rocklov-db:27017 req:9 conn:1:2 sconn:15 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x48500 type=uuid data=0x72d4798c33ba4c43...>}], "$db"=>"admin"}
 D, [2021-06-15T23:12:51.168341 #69433] DEBUG -- : MONGODB | rocklov-db:27017 req:9 | admin.endSessions | SUCCEEDED | 0.000s
+D, [2022-04-26T23:59:31.499769 #243428] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2022-04-26T23:59:31.500040 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-26T23:59:31.500145 #243428] DEBUG -- : MONGODB | Server rocklov-db:27017 initializing.
+D, [2022-04-26T23:59:31.500451 #243428] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-26T23:59:32.501875 #243428] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-26T23:59:33.502842 #243428] DEBUG -- : MONGODB | Waiting for up to 28.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-26T23:59:34.504384 #243428] DEBUG -- : MONGODB | Waiting for up to 27.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-26T23:59:35.505541 #243428] DEBUG -- : MONGODB | Waiting for up to 25.99 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-26T23:59:36.507017 #243428] DEBUG -- : MONGODB | Waiting for up to 24.99 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+W, [2022-04-26T23:59:36.912167 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-26T23:59:36.912735 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-26T23:59:36.913003 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-26T23:59:42.748966 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-26T23:59:42.749439 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-26T23:59:42.749693 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-26T23:59:48.676984 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-26T23:59:48.677383 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-26T23:59:48.677610 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-26T23:59:54.534133 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-26T23:59:54.534282 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-26T23:59:54.534370 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:00:00.539769 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:00:00.539880 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:00:00.539933 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:00:06.548669 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:00:06.549073 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:00:06.549465 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:00:12.752021 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:00:12.752153 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:00:12.752222 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:00:18.798830 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:00:18.799409 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:00:18.799769 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:00:24.630829 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:00:24.631270 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:00:24.631514 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:00:30.548060 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:00:30.548215 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:00:30.548297 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:00:36.611463 #243428]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:00:36.611970 #243428] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:00:36.612265 #243428] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T00:30:30.282617 #256491] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2022-04-27T00:30:30.283022 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T00:30:30.283180 #256491] DEBUG -- : MONGODB | Server rocklov-db:27017 initializing.
+D, [2022-04-27T00:30:30.283570 #256491] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:30:31.285137 #256491] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:30:32.286053 #256491] DEBUG -- : MONGODB | Waiting for up to 28.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:30:33.287723 #256491] DEBUG -- : MONGODB | Waiting for up to 27.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:30:34.289364 #256491] DEBUG -- : MONGODB | Waiting for up to 25.99 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:30:35.291003 #256491] DEBUG -- : MONGODB | Waiting for up to 24.99 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+W, [2022-04-27T00:30:35.389306 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:30:35.389666 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:30:35.389897 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:30:41.539094 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:30:41.539560 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:30:41.539810 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:30:47.370459 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:30:47.371393 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:30:47.371674 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:30:53.412362 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:30:53.412869 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:30:53.413166 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:30:59.341792 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:30:59.342197 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:30:59.342483 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:31:05.333867 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:31:05.334264 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:31:05.334508 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:31:11.308198 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:31:11.308603 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:31:11.308838 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:31:17.319565 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:31:17.320025 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:31:17.320288 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:31:23.328508 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:31:23.329036 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:31:23.329319 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:31:29.330188 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:31:29.330683 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:31:29.331015 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:31:35.339549 #256491]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:31:35.339934 #256491] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:31:35.340134 #256491] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T00:43:21.351213 #261607] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2022-04-27T00:43:21.352071 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T00:43:21.352524 #261607] DEBUG -- : MONGODB | Server rocklov-db:27017 initializing.
+D, [2022-04-27T00:43:21.353646 #261607] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:43:22.355788 #261607] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:43:23.357539 #261607] DEBUG -- : MONGODB | Waiting for up to 28.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:43:24.359368 #261607] DEBUG -- : MONGODB | Waiting for up to 26.99 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:43:25.361173 #261607] DEBUG -- : MONGODB | Waiting for up to 25.99 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:43:26.362933 #261607] DEBUG -- : MONGODB | Waiting for up to 24.99 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+W, [2022-04-27T00:43:26.365851 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:43:26.366616 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:43:26.367046 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:43:32.409660 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:43:32.410225 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:43:32.410603 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:43:38.419317 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:43:38.419840 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:43:38.420160 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:43:44.497904 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:43:44.498386 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:43:44.498649 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:43:50.397512 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:43:50.398538 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:43:50.398819 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:43:56.406790 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:43:56.407000 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:43:56.407132 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:44:02.412895 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:44:02.413413 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:44:02.413721 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:44:08.387118 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:44:08.387651 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:44:08.387984 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:44:14.496265 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:44:14.496791 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:44:14.497102 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:44:20.400669 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:44:20.401142 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:44:20.401458 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+W, [2022-04-27T00:44:26.403471 #261607]  WARN -- : MONGODB | Error checking rocklov-db:27017: SocketError: getaddrinfo: Name or service not known
+D, [2022-04-27T00:44:26.403616 #261607] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'unknown'.
+D, [2022-04-27T00:44:26.403689 #261607] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T00:45:35.778897 #262881] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2022-04-27T00:45:35.779200 #262881] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T00:45:35.779315 #262881] DEBUG -- : MONGODB | Server rocklov-db:27017 initializing.
+D, [2022-04-27T00:45:35.779579 #262881] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:45:35.780908 #262881] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'standalone'.
+D, [2022-04-27T00:45:35.781068 #262881] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2022-04-27T00:45:35.782844 #262881] DEBUG -- : MONGODB | rocklov-db:27017 req:5 conn:1:1 sconn:4 | rocklov.delete | STARTED | {"delete"=>"users", "ordered"=>true, "deletes"=>[{"q"=>{"email"=>"pitty@bol.com.br"}, "limit"=>0}], "$db"=>"rocklov", "lsid"=>{"id"=><BSON::Binary:0x48500 type=uuid data=0x7ab2e2a43ca34760...>}}
+D, [2022-04-27T00:45:35.783132 #262881] DEBUG -- : MONGODB | rocklov-db:27017 req:5 | rocklov.delete | SUCCEEDED | 0.000s
+D, [2022-04-27T00:45:58.660587 #263069] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2022-04-27T00:45:58.660788 #263069] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T00:45:58.660859 #263069] DEBUG -- : MONGODB | Server rocklov-db:27017 initializing.
+D, [2022-04-27T00:45:58.661023 #263069] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T00:45:58.662157 #263069] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'standalone'.
+D, [2022-04-27T00:45:58.662304 #263069] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2022-04-27T00:45:58.663979 #263069] DEBUG -- : MONGODB | rocklov-db:27017 req:5 conn:1:1 sconn:6 | rocklov.delete | STARTED | {"delete"=>"users", "ordered"=>true, "deletes"=>[{"q"=>{"email"=>"pitty@bol.com.br"}, "limit"=>0}], "$db"=>"rocklov", "lsid"=>{"id"=><BSON::Binary:0x50300 type=uuid data=0x696b73f929f340a4...>}}
+D, [2022-04-27T00:45:58.664527 #263069] DEBUG -- : MONGODB | rocklov-db:27017 req:5 | rocklov.delete | SUCCEEDED | 0.000s
+D, [2022-04-27T02:15:52.882654 #294406] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2022-04-27T02:15:52.882836 #294406] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T02:15:52.882906 #294406] DEBUG -- : MONGODB | Server rocklov-db:27017 initializing.
+D, [2022-04-27T02:15:52.883087 #294406] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T02:15:52.884146 #294406] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'standalone'.
+D, [2022-04-27T02:15:52.884328 #294406] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2022-04-27T02:15:52.886273 #294406] DEBUG -- : MONGODB | rocklov-db:27017 req:5 conn:1:1 sconn:9 | rocklov.delete | STARTED | {"delete"=>"users", "ordered"=>true, "deletes"=>[{"q"=>{"email"=>"pitty@bol.com.br"}, "limit"=>0}], "$db"=>"rocklov", "lsid"=>{"id"=><BSON::Binary:0x49340 type=uuid data=0xb7036b5192294f7c...>}}
+D, [2022-04-27T02:15:52.886771 #294406] DEBUG -- : MONGODB | rocklov-db:27017 req:5 | rocklov.delete | SUCCEEDED | 0.000s
+D, [2022-04-27T12:08:47.407404 #340293] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2022-04-27T12:08:47.408461 #340293] DEBUG -- : MONGODB | There was a change in the members of the 'Unknown' topology.
+D, [2022-04-27T12:08:47.408907 #340293] DEBUG -- : MONGODB | Server rocklov-db:27017 initializing.
+D, [2022-04-27T12:08:47.409426 #340293] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[rocklov-db:27017] servers=[#<Server address=rocklov-db:27017 UNKNOWN>]>
+D, [2022-04-27T12:08:47.411831 #340293] DEBUG -- : MONGODB | Server description for rocklov-db:27017 changed from 'unknown' to 'standalone'.
+D, [2022-04-27T12:08:47.412293 #340293] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2022-04-27T12:08:47.417731 #340293] DEBUG -- : MONGODB | rocklov-db:27017 req:5 conn:1:1 sconn:12 | rocklov.delete | STARTED | {"delete"=>"users", "ordered"=>true, "deletes"=>[{"q"=>{"email"=>"pitty@bol.com.br"}, "limit"=>0}], "$db"=>"rocklov", "lsid"=>{"id"=><BSON::Binary:0x48500 type=uuid data=0x3d02ffa394504e7a...>}}
+D, [2022-04-27T12:08:47.425537 #340293] DEBUG -- : MONGODB | rocklov-db:27017 req:5 | rocklov.delete | SUCCEEDED | 0.007s

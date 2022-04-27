@@ -5,7 +5,7 @@ require_relative "helpers"
 describe "POST /sessions" do
   context "login com sucesso" do
     before(:all) do
-      payload = { email: "virtrudes@cats.com", password: "lasanha1" }
+      payload = { email: "pitty@bol.com.br", password: "pwd123" }
       @result = Sessions.new.login(payload)
     end
 
