@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Prep') {
             steps {
-                sh 'bundle install'
+                sh 'cd rocklov/api && bundle install'
             }
         }
 
