@@ -17,8 +17,36 @@ describe "POST /signup" do
       expect(@result.parsed_response["_id"].length).to eql 24
     end
   end
-end
 
+
+  context "usuario ja existe" do
+
+    before(:all) do
+      # given that I have a new user
+      payload = { name: "Joao", email: "joao@ig.com.br", password: "pwd123" }
+      MongoDB.new.remove_user(payload[:email])
+
+      # and the email it is already registered
+      Signup.new.create(payload)
+
+      # when I do a request for route /signup
+      @result = Signup.new.create(payload)
+    end
+
+    it "valida status code 409" do
+      # than should return 409
+      expect(@result.code).to eql 409
+    end
+
+    it "valida retorno mensagem" do
+      # than should return 409
+      expect(@result.parsed_response["error"]).to eql "Email already exists :("
+    end
+  end
+
+  #challenge for required fields name, email and password
+  
+end
 #   examples = Helpers::get_fixture("login")
 
 #   examples.each do |e|
