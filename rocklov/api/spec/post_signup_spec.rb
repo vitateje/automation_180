@@ -19,7 +19,7 @@ describe "POST /signup" do
   end
 
 
-  context "usuario ja existe" do
+  context "usuario ja existente" do
 
     before(:all) do
       # given that I have a new user
@@ -45,7 +45,7 @@ describe "POST /signup" do
   end
 
   #challenge for required fields name, email and password
-  
+
 end
 #   examples = Helpers::get_fixture("login")
 
