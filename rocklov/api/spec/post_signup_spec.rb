@@ -34,34 +34,17 @@ describe "POST /signup" do
     end
 
     it "valida status code 409" do
-      # than should return 409
+      # then should return code 409
       expect(@result.code).to eql 409
     end
 
     it "valida retorno mensagem" do
-      # than should return 409
+      # than should return an error message
       expect(@result.parsed_response["error"]).to eql "Email already exists :("
     end
   end
+end
 
   #challenge for required fields name, email and password
 
-end
-#   examples = Helpers::get_fixture("login")
-
-#   examples.each do |e|
-#     context "#{e[:title]}" do
-#       before(:all) do
-#         @result = Sessions.new.login(e[:payload])
-#       end
-
-#       it "valida status code #{e[:code]}" do
-#         expect(@result.code).to eql e[:code]
-#       end
-
-#       it "valida id do usuario" do
-#         expect(@result.parsed_response["error"]).to eql e[:error]
-#       end
-#     end
-#   end
-# end
+  

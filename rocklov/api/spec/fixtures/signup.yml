@@ -1,0 +1,20 @@
+---
+- title: sem nome
+  payload:
+    email: virtrudes@cats.com
+    password: lasar
+  code: 401
+  error: Unauthorized
+- title: sem email
+  payload:
+    email: 404@cats.com
+    password: lasar
+  code: 401
+  error: Unauthorized
+- title: sem password
+  payload:
+    email: ''
+    password: lasar
+  code: 412
+  error: required email
+- title: sem o campo email
