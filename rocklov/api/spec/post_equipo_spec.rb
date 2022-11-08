@@ -4,7 +4,11 @@ describe "POST /equipos" do
     context "novo equipo" do
 
         before(:all) do
-            payload = { name: "Pitty", email: "pitty@bol.com.br", password: "pwd123" }
+            payload = { thumbnail: "kramer.jpg",
+                        name: "Kramer Seinfeld", 
+                        category: "Cordas", 
+                        price: 12,
+                     }
 
             @result = Signup.new.create(payload)
         end
@@ -15,5 +19,5 @@ describe "POST /equipos" do
         end
 
     end
-    
+
 end
