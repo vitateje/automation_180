@@ -15,7 +15,7 @@ describe "POST /equipos" do
 
         before(:all) do
 
-            thumbnail = File.open(File.join(Dir.pwd, "spec/fixtures/images", "kramer.jpg"))
+            thumbnail = File.open(File.join(Dir.pwd, "spec/fixtures/images", "kramer.jpg"), "rb")
 
             payload = { thumbnail: thumbnail,
                         name: "Kramer Seinfeld", 
