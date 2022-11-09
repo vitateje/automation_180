@@ -15,9 +15,7 @@ describe "POST /equipos" do
 
         before(:all) do
 
-            thumbnail = File.open(File.join(Dir.pwd, "spec/fixtures/images", "kramer.jpg"), "rb")
-
-            payload = { thumbnail: thumbnail,
+            payload = { thumbnail: Helpers::get_thumb("kramer.jpg"),
                         name: "Kramer Seinfeld", 
                         category: "Cordas", 
                         price: 12
@@ -40,9 +38,7 @@ describe "POST /equipos" do
 
         before(:all) do
 
-            thumbnail = File.open(File.join(Dir.pwd, "spec/fixtures/images", "baixo.jpg"), "rb")
-
-            payload = { thumbnail: thumbnail,
+            payload = { thumbnail: Helpers::get_thumb("baixo.jpg"),
                         name: "Contra Baixo", 
                         category: "Cordas", 
                         price: 59
