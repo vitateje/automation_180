@@ -1,4 +1,3 @@
-require_relative "routes/equipos"
 
 describe "POST /equipos" do
 
