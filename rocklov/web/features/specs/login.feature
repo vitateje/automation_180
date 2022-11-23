@@ -11,7 +11,7 @@ Funcionalidade: Login
     Cenario: Login do usuário
 
         Dado que acesso a página principal
-        Quando submeto minhas credencias com "virtrudes@cats.com" e "lasanha1"
+        Quando submeto minhas credencias com "venus@cats.com" e "pwd123"
         Então sou redirecionado para o Dashboard
 
     Esquema do Cenario: Tentar Logar

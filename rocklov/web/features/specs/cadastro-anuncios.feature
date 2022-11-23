@@ -7,7 +7,7 @@ Funcionalidade: Cadastro de Anúncios
     Para que eu possa disponibiliza-los para locação
 
     Contexto: Login
-        * Login com "virtrudes@cats.com" e "lasanha1"
+        * Login com "virtrudes@cats.com" e "pwd123"
 
     Cenario: Novo equipo
 
