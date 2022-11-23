@@ -50,7 +50,7 @@ describe "POST /equipos" do
   
   
         it "deve retornar 401" do
-            expect(@result.code).to eql 401
+            expect(@result.code).to eql 402
         end
 
     end
