@@ -1,26 +1,28 @@
-#language: pt
+        #language: pt
 
-@login
-Funcionalidade: Login
+        @login
+        Funcionalidade: Login
 
-    Sendo um usuário cadastrado
-    Quero acessar o sistema da Rocklov
-    Para que eu possa anunciar meus equipamentos musicais
+        Sendo um usuário cadastrado
+        Quero acessar o sistema da Rocklov
+        Para que eu possa anunciar meus equipamentos musicais
 
-    
-    Cenario: Login do usuário
+            Contexto: Login
+                * Login com "virtrudes@cats.com" e "pwd123"
 
-        Dado que acesso a página principal
-        Quando submeto minhas credencias com "venus@cats.com" e "pwd123"
-        Então sou redirecionado para o Dashboard
+            Cenario: Login do usuário
 
-    Esquema do Cenario: Tentar Logar
+            Dado que acesso a página principal
+            Quando submeto minhas credencias com "venus@cats.com" e "pwd123"
+            Então sou redirecionado para o Dashboard
 
-        Dado que acesso a página principal
-        Quando submeto minhas credencias com "<email_input>" e "<senha_input>"
-        Então vejo a mensagem de alerta: "<mensagem_output>"
+            Esquema do Cenario: Tentar Logar
 
-        Exemplos:
+            Dado que acesso a página principal
+            Quando submeto minhas credencias com "<email_input>" e "<senha_input>"
+            Então vejo a mensagem de alerta: "<mensagem_output>"
+
+            Exemplos:
             | email_input       | senha_input | mensagem_output                  |
             | virtrudes@cat.com | peixe       | Usuário e/ou senha inválidos.    |
             | virtrudes@aol.com | lasanha     | Usuário e/ou senha inválidos.    |

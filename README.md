@@ -43,6 +43,8 @@ Hosts
 
 * to generate and save report in html:
     cucumber --format html --out reports.html
+    to run the seeds:
+    rake local_seeds
 
 * install java8 jdk
 * install allure-cucumber
