@@ -73,5 +73,9 @@ Entao('nao devo ver esse item no meu Dashboard') do
 end
 
 Quando('nao confirmo a solicitacao') do
-  pending # Write code here that turns the phrase above into concrete actions
+  @dash_page.cancel_removal
+end
+
+Entao('esse item deve permanecer no meu Dashboard') do
+  expect(@dash_page.equipo_list).to have_content @equipo[:name]
 end

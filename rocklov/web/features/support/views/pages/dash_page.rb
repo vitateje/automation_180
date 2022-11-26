@@ -24,6 +24,10 @@ class DashPage
         click_on "Sim"
     end
 
+    def cancel_removal
+        click_on "Não"
+    end
+
     def has_no_equipo?(name)
         return page.has_no_css?(".equipo-list li", text:name)
     end

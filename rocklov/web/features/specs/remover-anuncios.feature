@@ -8,7 +8,7 @@
         Contexto: Login
             * Login com "extraT@email.com" e "pwd123"
 
-            @temp
+            
             Cenario: Remover um anuncio
 
             Dado que eu tenho um anuncio indesejado:
@@ -20,6 +20,7 @@
             E confirmo a exclusao
             Entao nao devo ver esse item no meu Dashboard
 
+            @temp
             Cenario: Desistir da exclusao
 
             Dado que eu tenho um anuncio indesejado:
@@ -29,4 +30,4 @@
             | preco     | 100       |
 Quando eu solicito a esse exclusao desse item
 Mas nao confirmo a solicitacao
-Entao devo ver esse item no meu Dashboard
+Entao esse item deve permanecer no meu Dashboard
