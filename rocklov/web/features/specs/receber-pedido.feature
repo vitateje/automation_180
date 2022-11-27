@@ -36,7 +36,7 @@
 
             """
 
-            maira@locataria.com deseja alugar o equipamento: Trompete em: DATA_ATUAL
+            maria@locataria.com deseja alugar o equipamento: Trompete em: DATA_ATUAL
 
             """
 
