@@ -54,8 +54,8 @@ Dado('que eu tenho um anuncio indesejado:') do |table|
 
   }
 
-
   EquiposService.new.create(@equipo, user_id)
+  
   visit current_path
 end
 
