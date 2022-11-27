@@ -35,9 +35,7 @@
             Então devo ver a seguinte mensagem:
 
             """
-
             maria@locataria.com deseja alugar o equipamento: Trompete em: DATA_ATUAL
-
             """
 
 E devo ver os links: "ACEITAR" e "REJEITAR" no pedido
