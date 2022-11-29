@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'vitateje/ruby-web-agent'
+            image 'qaninja/ruby-web-agent'
             args '--network host'
         }
     }
