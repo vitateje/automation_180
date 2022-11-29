@@ -1,0 +1,40 @@
+pipeline {
+    agent {
+        docker {
+            image 'vitateje/ruby-web-agent'
+            args '--network host'
+        }
+    }
+
+    stages {
+        stage('Prep') {
+            steps {
+                sh 'cd rocklov/web && bundle install'
+            }
+        }
+
+        stage('Testing') {
+            steps {
+                sh 'cd rocklov/web && rake local_seeds'
+            }
+        }
+
+        stage('UAT') {
+            steps {
+                echo 'Aguardando testes de aceitacao'
+                input message: 'Podemos ir para producao?'
+            }
+        }
+        stage('Prod') {
+            steps {
+                echo 'WebApp pronta para producao :)'
+            }
+        }
+        
+    }
+    post {
+        always{
+            allure includeProperties: false, jdk: '', results: [[path: 'rocklov/web/logs']]
+        }
+    }
+}
