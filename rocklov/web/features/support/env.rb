@@ -36,7 +36,7 @@ end
 Capybara.configure do |config|
   config.default_driver = @driver
   config.app_host = CONFIG["url"]
-  Capybara.default_wait_time = 10
+  Capybara.default_max_wait_time = 10
 end
 
 AllureCucumber.configure do |config|
