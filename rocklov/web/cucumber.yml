@@ -4,7 +4,7 @@ jenkins: --publish-quiet -p allure -p bdd -p local -p chrome_headless
 bdd: -f pretty
 dots: -f progress
 html: -f html -o logs/report.html
-allure: --format AllureCucumber::Formatter --out=web/logs
+allure: --format AllureCucumber::CucumberFormatter --out=/logs
 local: CONFIG=local.yml
 hmg: CONFIG=hmg.yml
 firefox: BROWSER=firefox

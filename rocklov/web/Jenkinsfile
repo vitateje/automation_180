@@ -34,7 +34,7 @@ pipeline {
     }
     post {
         always {
-            allure includeProperties: true, jdk: '', results: [[path: 'web/logs']]
+            allure includeProperties: false, jdk: '', results: [[path: '/logs']]
         }
     }
 }
